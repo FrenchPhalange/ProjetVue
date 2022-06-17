@@ -25,14 +25,14 @@
             <h1 class="display-2"> Produits disponible : </h1>
             <div class="row">
                 <fiche-produit v-for="produit in produits" v-bind:nom="produit" v-on:commande-passee="commander" role="commande"></fiche-produit>
-                <!-- 
+                
                 <div class="col-3" v-for="produit in produits">
                     <p class="jumbotron">
                         Acheter : {{ produit }}
                         <button v-on:click="commander(produit)">Commander</button>
                     </p>
                 </div>
-                -->
+                
         </div>
     </div>
 
